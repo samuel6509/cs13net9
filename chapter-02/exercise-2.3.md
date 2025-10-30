@@ -36,4 +36,13 @@
 
 EXTRA:
 what type would you choose for the following numbers?
-    . 
+    . telephone nunber = string
+    . persons height = double 
+    . persons age = int
+    . persons salary = decimal 
+    . books ISBN = string
+    . books price = decimal 
+    . books weight = double
+    . country's population = int
+    . number of stars in universe = int 
+    . number of employees in small bussinsses / less than 50,000 = int 
