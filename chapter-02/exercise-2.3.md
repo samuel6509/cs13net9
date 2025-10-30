@@ -38,7 +38,7 @@ EXTRA:
 what type would you choose for the following numbers?
     . telephone nunber = string
     . persons height = double 
-    . persons age = int
+    . persons age = int (coube be byte as thats up to 255 but not worth it tbh)
     . persons salary = decimal 
     . books ISBN = string
     . books price = decimal 
