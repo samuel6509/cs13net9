@@ -1,7 +1,8 @@
 ﻿// OverFlow();
 // FizzBuzz();
 // HandleExceptionsUserInput();
-DividingByZero();
+// DividingByZero();
+KnowledgeOfOperators();
 
 // trying something out for exercise 3.3 question 8
 // turns out its an infinite loop
@@ -140,4 +141,30 @@ void DividingByZero()
         Console.WriteLine($"EXCEPTION CAUGHT: {e}");
     }
     // I now see it always returns 8 which is infinity upwards
+}
+
+// function testing operators
+// seeing if i can pretict what happens correctly
+void KnowledgeOfOperators()
+{
+    // one is going to stay the same 
+    int one = 3;
+    Console.WriteLine(one);
+    // one did indeed stay the same 
+
+    // two is going to equal 6
+    int two = 2 + ++one;
+    Console.WriteLine(two);
+    // it did equal six
+    Console.WriteLine();
+
+    // int three = 3 << 2;
+    // int four = 10 >> 1;
+    // Console.WriteLine();
+    // Console.WriteLine();
+
+    // int five = 10 & 8;
+    // int six = 10 | 7;
+    // Console.WriteLine();
+    // Console.WriteLine();
 }
