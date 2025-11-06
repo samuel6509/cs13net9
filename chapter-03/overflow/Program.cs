@@ -74,24 +74,43 @@ void HandleExceptionsUserInput()
 {
     int firstInput = 0;
     int secondInput = 0;
+
     Console.Write("Enter a number between 0 & 255: ");
     try
     {
         firstInput = int.Parse(Console.ReadLine().Replace(" ", ""));
+        if(firstInput < 0 || firstInput > 255)
+        {
+            Console.WriteLine("NUMBER MUST BE BETWEEN 0 & 255!");
+            return;
+        }
     }
-    catch (Exception e)
+    catch (FormatException e)
     {
-        Console.WriteLine($"EXCEPTION CAUGHT: {e}");
-        return;
+        Console.WriteLine($"FORMAT EXCEPTION CAUGHT: {e}");
     }
+
     Console.Write("Enter another number between 0 & 255: ");
     try
     {
         secondInput = int.Parse(Console.ReadLine().Replace(" ", " "));
+        if(secondInput < 0 || secondInput > 255)
+        {
+            Console.WriteLine("NUMBER MUST BE BETWEEN 0 & 255!");
+            return;
+        }
     }
-    catch (Exception e)
+    catch (FormatException e)
     {
-        Console.WriteLine($"EXCEPTION CAUGHT: {e}");
+        Console.WriteLine($"FORMAT EXCEPTION CAUGHT: {e}");
     }
-    Console.WriteLine($"{firstInput} divided by by {secondInput} is {firstInput / secondInput}");
+
+    try
+    {
+        Console.WriteLine($"{firstInput} divided by by {secondInput} is {firstInput / secondInput}");
+    }
+    catch(DivideByZeroException e)
+    {
+        Console.WriteLine($"DIVIDE BY ZERO EXCEPTION CAUGHT: {e}");
+    }
 }
