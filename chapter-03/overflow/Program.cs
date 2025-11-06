@@ -120,6 +120,20 @@ void HandleExceptionsUserInput()
     }
 }
 
-// function to divide an int by zero and a double by zero to see the resaults
+// function to divide a double by zero to see if it works
 void DividingByZero()
-{}
+{
+    double one = 10;
+    double two = 0;
+
+    try
+    {
+        Console.WriteLine($"ten divided by zero equals {one / two}");
+    }
+    // idk if this will work so...
+    catch (Exception e)
+    {
+        Console.WriteLine($"EXCEPTION CAUGHT: {e}");
+    }
+    // I now see it always returns 8 which is infinity upwards
+}
