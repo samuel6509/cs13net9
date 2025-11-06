@@ -155,16 +155,32 @@ void KnowledgeOfOperators()
     // two is going to equal 6
     int two = 2 + ++one;
     Console.WriteLine(two);
-    // it did equal six
+    // it did equal 6
     Console.WriteLine();
 
-    // int three = 3 << 2;
-    // int four = 10 >> 1;
-    // Console.WriteLine();
-    // Console.WriteLine();
+    // this will be 12
+    // 0011 becomes 1100 which is 12
+    int three = 3 << 2;
+    Console.WriteLine(three);
+    // it was 12
 
-    // int five = 10 & 8;
-    // int six = 10 | 7;
-    // Console.WriteLine();
-    // Console.WriteLine();
+    // this will be 5
+    // 1010 becomes 0101 which is 5
+    int four = 10 >> 1;
+    Console.WriteLine(four);
+    // it was 5
+    Console.WriteLine();
+
+    // five will equal 8 / BITWISE AND 
+    // 1010 AND 1000 == 1000 WHICH IS 8
+    int five = 10 & 8;
+    Console.WriteLine(five);
+    // equals 8
+
+    // six will equal 15 / BITWISE OR (NOT XOR / EXCLUSIVE OR)
+    // 1010 OR 0111 == 1111 WHICH IS 15
+    int six = 10 | 7;
+    Console.WriteLine(six);
+    // equals 15
+    Console.WriteLine();
 }
