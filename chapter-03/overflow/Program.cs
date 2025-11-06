@@ -1,5 +1,6 @@
 ﻿// OverFlow();
-FizzBuzz();
+// FizzBuzz();
+HandleExceptionsUserInput();
 
 // function for catching an overflow of a byte in a for loop
 void OverFlow()
@@ -64,4 +65,33 @@ void FizzBuzz()
     }
     // prints each item of list in a single string spaced with comma + space
     Console.WriteLine(string.Join(", ", answer));
+}
+
+// user gives 2 numbers between 0 & 255
+// divide first number by second number
+// point is to handle any excpections that can be raised
+void HandleExceptionsUserInput()
+{
+    int firstInput = 0;
+    int secondInput = 0;
+    Console.Write("Enter a number between 0 & 255: ");
+    try
+    {
+        firstInput = int.Parse(Console.ReadLine().Replace(" ", ""));
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine($"EXCEPTION CAUGHT: {e}");
+        return;
+    }
+    Console.Write("Enter another number between 0 & 255: ");
+    try
+    {
+        secondInput = int.Parse(Console.ReadLine().Replace(" ", " "));
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine($"EXCEPTION CAUGHT: {e}");
+    }
+    Console.WriteLine($"{firstInput} divided by by {secondInput} is {firstInput / secondInput}");
 }
