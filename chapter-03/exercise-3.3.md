@@ -21,3 +21,17 @@
     . OPTIONAL conditional expression / i < 10;
     . OPTIONAL iterator expression / i++;
     . all are optional 
+
+7. what is the difference between = & == operators
+    . = is used to assign a value to a variable
+    . == is used to compare if two things are equal / the same 
+
+8. does the following statement compile? for (;;;) ; 
+    . i wouldnt expect it to because it is missing the opening and closing brakcets for initialising for loop but i will try now...
+    . turns out it does compile & it is just an infite loop
+
+9. what does the underscore (_) represent in a switch statement?
+    . its the newer and easier way for the default keyword
+
+10. what interface must an object implement to be enumerated over by using a foreach statement?
+    . System.Collections.IEnumerable

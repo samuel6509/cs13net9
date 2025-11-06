@@ -3,6 +3,10 @@
 // HandleExceptionsUserInput();
 DividingByZero();
 
+// trying something out for exercise 3.3 question 8
+// turns out its an infinite loop
+// for (; ; );
+
 // function for catching an overflow of a byte in a for loop
 void OverFlow()
 {
