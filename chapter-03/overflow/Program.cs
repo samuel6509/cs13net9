@@ -78,13 +78,16 @@ void HandleExceptionsUserInput()
     Console.Write("Enter a number between 0 & 255: ");
     try
     {
+        // read user input, parse as int & replace white space with no space
         firstInput = int.Parse(Console.ReadLine().Replace(" ", ""));
-        if(firstInput < 0 || firstInput > 255)
+        // not exception handling but neccessary error handling
+        if (firstInput < 0 || firstInput > 255)
         {
             Console.WriteLine("NUMBER MUST BE BETWEEN 0 & 255!");
             return;
         }
     }
+    // if there is no int or the string cannot be converted cleanly to int
     catch (FormatException e)
     {
         Console.WriteLine($"FORMAT EXCEPTION CAUGHT: {e}");
@@ -109,7 +112,8 @@ void HandleExceptionsUserInput()
     {
         Console.WriteLine($"{firstInput} divided by by {secondInput} is {firstInput / secondInput}");
     }
-    catch(DivideByZeroException e)
+    // if zero is the second number given
+    catch (DivideByZeroException e)
     {
         Console.WriteLine($"DIVIDE BY ZERO EXCEPTION CAUGHT: {e}");
     }
