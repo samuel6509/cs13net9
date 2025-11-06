@@ -1,6 +1,7 @@
 ﻿// OverFlow();
 // FizzBuzz();
-HandleExceptionsUserInput();
+// HandleExceptionsUserInput();
+DividingByZero();
 
 // function for catching an overflow of a byte in a for loop
 void OverFlow()
@@ -97,7 +98,7 @@ void HandleExceptionsUserInput()
     try
     {
         secondInput = int.Parse(Console.ReadLine().Replace(" ", " "));
-        if(secondInput < 0 || secondInput > 255)
+        if (secondInput < 0 || secondInput > 255)
         {
             Console.WriteLine("NUMBER MUST BE BETWEEN 0 & 255!");
             return;
@@ -118,3 +119,7 @@ void HandleExceptionsUserInput()
         Console.WriteLine($"DIVIDE BY ZERO EXCEPTION CAUGHT: {e}");
     }
 }
+
+// function to divide an int by zero and a double by zero to see the resaults
+void DividingByZero()
+{}
