@@ -1,8 +1,8 @@
 ﻿// OverFlow();
-// FizzBuzz();
+FizzBuzz();
 // HandleExceptionsUserInput();
 // DividingByZero();
-KnowledgeOfOperators();
+// KnowledgeOfOperators();
 
 // trying something out for exercise 3.3 question 8
 // turns out its an infinite loop
@@ -52,24 +52,13 @@ void FizzBuzz()
     List<string> answer = new List<string>();
     for (int i = 1; i <= max; i++)
     {
-        if (i % 3 == 0 && i % 5 == 0)
-        {
-            answer.Add("FizzBuzz");
-        }
-        else if (i % 3 == 0)
-        {
-            answer.Add("Fizz");
-        }
-        else if (i % 5 == 0)
-        {
-            answer.Add("Buzz");
-        }
-        else
-        {
-            answer.Add($"{i}");
-        }
+        if (i % 3 == 0 && i % 5 == 0) answer.Add("FizzBuzz");
+        else if (i % 3 == 0) answer.Add("Fizz");
+        else if (i % 5 == 0) answer.Add("Buzz");
+        else answer.Add($"{i}");
     }
     // prints each item of list in a single string spaced with comma + space
+    // foreach(string s in answer) Console.Write(s);
     Console.WriteLine(string.Join(", ", answer));
 }
 
