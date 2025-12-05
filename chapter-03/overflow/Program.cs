@@ -1,5 +1,9 @@
-﻿// OverFlow();
-FizzBuzz();
+﻿var fb = FizzBuzz(15);
+foreach(var pair in fb) Console.WriteLine($"{pair.Key}:{pair.Value}");
+var fib = Fibonacci(15);
+foreach(var val in fib) Console.WriteLine(val);
+
+// OverFlow();
 // HandleExceptionsUserInput();
 // DividingByZero();
 // KnowledgeOfOperators();
@@ -45,21 +49,44 @@ void OverFlow()
 // divisible by 3 fizz
 // divisible by 5 buzz
 // neither return number
-void FizzBuzz()
+Dictionary<int, string> FizzBuzz(int n)
 {
-    // can change this easily in for loop without, easier for other ppl to use this
-    int max = 100;
-    List<string> answer = new List<string>();
-    for (int i = 1; i <= max; i++)
+    // better way of doing it 
+    var dict = new Dictionary<int, string>();
+    if(n < 1) Console.WriteLine("must be 1 or greater");
+    for(int i = 1; i <= n; i++)
     {
-        if (i % 3 == 0 && i % 5 == 0) answer.Add("FizzBuzz");
-        else if (i % 3 == 0) answer.Add("Fizz");
-        else if (i % 5 == 0) answer.Add("Buzz");
-        else answer.Add($"{i}");
+        if(i % 3 == 0 && i % 5 == 0) dict.Add(i, "FizzBuzz");
+        else if(i % 3 == 0) dict.Add(i, "Fizz");
+        else if(i % 5 == 0) dict.Add(i, "Buzz");
+        else dict.Add(i, "");
     }
-    // prints each item of list in a single string spaced with comma + space
-    // foreach(string s in answer) Console.Write(s);
-    Console.WriteLine(string.Join(", ", answer));
+    return dict;
+
+    // // can change this easily in for loop without, easier for other ppl to use this
+    // int max = 100;
+    // List<string> answer = new List<string>();
+    // for (int i = 1; i <= max; i++)
+    // {
+    //     if (i % 3 == 0 && i % 5 == 0) answer.Add("FizzBuzz");
+    //     else if (i % 3 == 0) answer.Add("Fizz");
+    //     else if (i % 5 == 0) answer.Add("Buzz");
+    //     else answer.Add($"{i}");
+    // }
+    // // prints each item of list in a single string spaced with comma + space
+    // // foreach(string s in answer) Console.Write(s);
+    // Console.WriteLine(string.Join(", ", answer));
+}
+
+// trying fib to see if I can remember it 
+List<int> Fibonacci(int n)
+{
+    if(n < 1) return [];
+    if(n == 1) return [0];
+    var list = new List<int>{0, 1};
+    if(n == 2) return list;
+    for(int i = 2; i < n; i++) list.Add(list[i - 1] + list[i - 2]);
+    return list;
 }
 
 // user gives 2 numbers between 0 & 255
