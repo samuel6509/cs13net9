@@ -89,6 +89,20 @@ List<int> Fibonacci(int n)
     return list;
 }
 
+// seeing if i can remember twosum
+int[] Twosum(int[] nums, int n)
+{
+    int target = 0;
+    var dict = new Dictionary<int, int>();
+    for(int i = 0; i < nums.Length; i++)
+    {
+        target = n - nums[i];
+        if(dict.ContainsKey(target)) return new int[] {dict[target], i};
+        if(!dict.ContainsKey(nums[i])) dict.Add(nums[i], i);
+    }
+    return [];
+}
+
 // user gives 2 numbers between 0 & 255
 // divide first number by second number
 // point is to handle any excpections that can be raised
