@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapter-04", "chapter-04", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLib", "chapter-04\CalculatorLib\CalculatorLib.csproj", "{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallStackExceptionHandlingLib", "chapter-04\CallStackExceptionHandlingLib\CallStackExceptionHandlingLib.csproj", "{F1EB9780-BA13-4C4C-8911-8D4BDF1DEE1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallStackExceptionHandling", "chapter-04\CallStackExceptionHandling\CallStackExceptionHandling.csproj", "{7EF2E949-67B9-47A9-825B-F34536AAA2EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,30 @@ Global
 		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Release|x64.Build.0 = Release|Any CPU
 		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Release|x86.ActiveCfg = Release|Any CPU
 		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Release|x86.Build.0 = Release|Any CPU
+		{F1EB9780-BA13-4C4C-8911-8D4BDF1DEE1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1EB9780-BA13-4C4C-8911-8D4BDF1DEE1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1EB9780-BA13-4C4C-8911-8D4BDF1DEE1A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F1EB9780-BA13-4C4C-8911-8D4BDF1DEE1A}.Debug|x64.Build.0 = Debug|Any CPU
+		{F1EB9780-BA13-4C4C-8911-8D4BDF1DEE1A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F1EB9780-BA13-4C4C-8911-8D4BDF1DEE1A}.Debug|x86.Build.0 = Debug|Any CPU
+		{F1EB9780-BA13-4C4C-8911-8D4BDF1DEE1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1EB9780-BA13-4C4C-8911-8D4BDF1DEE1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1EB9780-BA13-4C4C-8911-8D4BDF1DEE1A}.Release|x64.ActiveCfg = Release|Any CPU
+		{F1EB9780-BA13-4C4C-8911-8D4BDF1DEE1A}.Release|x64.Build.0 = Release|Any CPU
+		{F1EB9780-BA13-4C4C-8911-8D4BDF1DEE1A}.Release|x86.ActiveCfg = Release|Any CPU
+		{F1EB9780-BA13-4C4C-8911-8D4BDF1DEE1A}.Release|x86.Build.0 = Release|Any CPU
+		{7EF2E949-67B9-47A9-825B-F34536AAA2EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF2E949-67B9-47A9-825B-F34536AAA2EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF2E949-67B9-47A9-825B-F34536AAA2EC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7EF2E949-67B9-47A9-825B-F34536AAA2EC}.Debug|x64.Build.0 = Debug|Any CPU
+		{7EF2E949-67B9-47A9-825B-F34536AAA2EC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7EF2E949-67B9-47A9-825B-F34536AAA2EC}.Debug|x86.Build.0 = Debug|Any CPU
+		{7EF2E949-67B9-47A9-825B-F34536AAA2EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF2E949-67B9-47A9-825B-F34536AAA2EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EF2E949-67B9-47A9-825B-F34536AAA2EC}.Release|x64.ActiveCfg = Release|Any CPU
+		{7EF2E949-67B9-47A9-825B-F34536AAA2EC}.Release|x64.Build.0 = Release|Any CPU
+		{7EF2E949-67B9-47A9-825B-F34536AAA2EC}.Release|x86.ActiveCfg = Release|Any CPU
+		{7EF2E949-67B9-47A9-825B-F34536AAA2EC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,5 +80,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5219E4AC-5FD3-4EF7-89F3-54BA4F022BE7} = {44596733-3336-636E-770D-E71607DF8584}
 		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725} = {3EC1C72B-6E6E-41C8-41B0-6305FFCC1839}
+		{F1EB9780-BA13-4C4C-8911-8D4BDF1DEE1A} = {3EC1C72B-6E6E-41C8-41B0-6305FFCC1839}
+		{7EF2E949-67B9-47A9-825B-F34536AAA2EC} = {3EC1C72B-6E6E-41C8-41B0-6305FFCC1839}
 	EndGlobalSection
 EndGlobal
