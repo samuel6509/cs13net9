@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapter-03", "chapter-03", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "overflow", "chapter-03\overflow\overflow.csproj", "{5219E4AC-5FD3-4EF7-89F3-54BA4F022BE7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapter-04", "chapter-04", "{3EC1C72B-6E6E-41C8-41B0-6305FFCC1839}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLib", "chapter-04\CalculatorLib\CalculatorLib.csproj", "{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,11 +33,24 @@ Global
 		{5219E4AC-5FD3-4EF7-89F3-54BA4F022BE7}.Release|x64.Build.0 = Release|Any CPU
 		{5219E4AC-5FD3-4EF7-89F3-54BA4F022BE7}.Release|x86.ActiveCfg = Release|Any CPU
 		{5219E4AC-5FD3-4EF7-89F3-54BA4F022BE7}.Release|x86.Build.0 = Release|Any CPU
+		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Debug|x64.Build.0 = Debug|Any CPU
+		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Debug|x86.Build.0 = Debug|Any CPU
+		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Release|x64.ActiveCfg = Release|Any CPU
+		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Release|x64.Build.0 = Release|Any CPU
+		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Release|x86.ActiveCfg = Release|Any CPU
+		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5219E4AC-5FD3-4EF7-89F3-54BA4F022BE7} = {44596733-3336-636E-770D-E71607DF8584}
+		{6DE1F7E2-54AE-43DA-8201-1C825DF7E725} = {3EC1C72B-6E6E-41C8-41B0-6305FFCC1839}
 	EndGlobalSection
 EndGlobal
