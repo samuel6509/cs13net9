@@ -7,28 +7,50 @@ class PrimeFactorApp
 {
     public string App()
     {
-        int number;
-        while(true)
+        while (true)
         {
-            Console.Write("Pick a number between 1 & 1000: ");
-            string input = Console.ReadLine();
-            if(string.IsNullOrWhiteSpace(input))
+            int number;
+            string input;
+            while(true)
             {
-                Console.WriteLine("Try again...");
-                continue;
+                Console.WriteLine("Pick a number between 1 & 1000: ");
+                input = Console.ReadLine();
+                if(string.IsNullOrWhiteSpace(input))
+                {
+                    Console.WriteLine("Try again...");
+                    continue;
+                }
+                if(!int.TryParse(input, out number))
+                {
+                    Console.WriteLine("Must be a number...");
+                    continue;
+                }
+                if(number < 1 || number > 1000)
+                {
+                    Console.WriteLine("Number must be between 1 & 1000");
+                    continue;
+                }
+                break;
             }
-            if(!int.TryParse(input, out number))
+            string answer = PrimeFactor.PrimeFactors(number);
+            Console.WriteLine($"The prime factors of {number} are {answer}");
+            while(true)
             {
-                Console.WriteLine("Must be a number...");
-                continue;
+                Console.WriteLine("Go again? 1:YES | 2:NO" );
+                input = Console.ReadLine();
+                if(string.IsNullOrWhiteSpace(input))
+                {
+                    Console.WriteLine("Try again...");
+                    continue;
+                }
+                if(input == "1") break;
+                if(input == "2") return answer;
+                else
+                {
+                    Console.WriteLine("Must choose 1 or 2");
+                    continue;
+                }
             }
-            if(number < 1 || number > 1000)
-            {
-                Console.WriteLine("Number must be between 1 & 1000");
-                continue;
-            }
-            break;
         }
-        return "";
     }
 }
