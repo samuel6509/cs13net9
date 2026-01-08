@@ -1,6 +1,4 @@
-﻿using System.Text;
-
-namespace Exercise_PrimeFactorsLib;
+﻿namespace Exercise_PrimeFactorsLib;
 
 public static class PrimeFactor
 {
