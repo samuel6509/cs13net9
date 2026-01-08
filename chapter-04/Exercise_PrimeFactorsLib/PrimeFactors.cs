@@ -9,6 +9,8 @@ public static class PrimeFactor
     // RETURN 5x5x2
     public static string PrimeFactors(int n)
     {
+        if(n < 1 || n > 1000) throw new ArgumentOutOfRangeException(nameof(n), "number must be between 1 & 1000");
+        
         int current = n;
         var list = new List<int>();
         for(int i = 2; i <= n; i++)
