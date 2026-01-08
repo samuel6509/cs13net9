@@ -24,5 +24,4 @@ public class PrimeFactorUnitTests
     {
         Assert.Throws<ArgumentOutOfRangeException>(() => PrimeFactor.PrimeFactors(a));
     }
-
 }
