@@ -12,16 +12,18 @@ static class PrimeFactor
     static string PrimeFactors(int n)
     {
         int current = n;
-        var list = new List<string>();
+        var list = new List<int>();
         for(int i = 2; i < n; i++)
         {
             while(current % i == 0)
             {
                 current /= i;
-                list.Add(i.ToString());
+                list.Add(i);
             }
         }
-        string answer = string.Join('+', list);
+        list.Sort();
+        list.Reverse();
+        string answer = string.Join('x', list);
         Console.WriteLine(answer);
         return answer;
     }
