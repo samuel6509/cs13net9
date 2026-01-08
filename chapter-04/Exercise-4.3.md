@@ -23,7 +23,7 @@
   . warning = potential problems or unexpected situations
   . information = general info about application flow
 6. What is the difference between the Debug and Trace classes?
-  .
+  . Debug code is removed from release builds whereas trace code remains
 7. When writing a unit test, what are the three “A”s?
   . Arrange: Declaring variables for input / output
   . Act: Executes the unit that i want testing
@@ -33,3 +33,5 @@
 9. What dotnet command executes xUnit tests?
   . dotnet test
 10. What statement should you use to rethrow a caught exception named ex without losing the stack trace?
+  . throw;
+  . this rethrows without losing the stack trace
