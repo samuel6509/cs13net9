@@ -63,3 +63,8 @@ gerrierAccount.Balance = 98;
 WriteLine(format: "{0} earned {1:C} interest.",
           arg0: gerrierAccount.AccountName,
           arg1: gerrierAccount.Balance * BankAccount.InterestRate);
+
+// Constant fields are accessible via the type.
+WriteLine($"{bob.Name} is a {Person.Species}.");
+// Read-only fields are accessible via the variable.
+WriteLine($"{bob.Name} was born on {bob.HomePlanet}.");
