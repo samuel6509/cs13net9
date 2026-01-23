@@ -17,6 +17,10 @@ bob.Born = new DateTimeOffset(year: 1965, month: 12, day: 22,
                               hour: 16, minute: 28, second: 0, 
                               offset: TimeSpan.FromHours(-5)); // US Eastern Standard Time.
 bob.FavoriteAncientWonder = WondersOfTheAncientWorld.StatueOfZeusAtOlympia;
+// bob.FavoriteAncientWonder = WondersOfTheAncientWorld.StatueOfZeusAtOlympia |
+                            // WondersOfTheAncientWorld.GreatPyramidOfGiza;
+// bob.FavoriteAncientWonder = (WondersOfTheAncientWorld)128;
+
 bob.BucketList = WondersOfTheAncientWorld.HangingGardensOfBabylon
                  | WondersOfTheAncientWorld.MausoleumAtHalicarnassus;
 // bob.BucketList = (WondersOfTheAncientWorld)18;
