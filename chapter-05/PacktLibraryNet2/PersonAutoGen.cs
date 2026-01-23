@@ -84,7 +84,14 @@ public partial class Person
     {
         get
         {
-            return Children.Find(p => p.Name == name);
+            var child = Children.Find(p => p.Name == name);
+            if(child is null)
+            {
+                throw new ArgumentException(
+                message: $"{name} does not seem to be a child.",
+                paramName: nameof(name));
+            }
+            return child;
         } 
     }
     #endregion
