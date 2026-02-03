@@ -6,3 +6,13 @@ public class Headset(string manufacturer, string productName)
     // Default parameterless constructor calls the primary constructor.
     public Headset() : this("Microsoft", "HoloLens") { }
 }
+
+public class Car 
+{
+    public int Wheels { get; set; }
+    public bool IsEV { get; set; }
+    internal void Start()
+    { 
+        Console.WriteLine("Starting...");
+    }
+}

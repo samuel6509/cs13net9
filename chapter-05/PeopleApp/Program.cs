@@ -295,3 +295,11 @@ Headset holo = new();
 WriteLine($"{holo.ProductName} is made by {holo.Manufacturer}.");
 Headset mq = new() { Manufacturer = "Meta", ProductName = "Quest 3" };
 WriteLine($"{mq.ProductName} is made by {mq.Manufacturer}.");
+
+// exercise 5.2:
+// Car class is private, no access modifier stated
+// same for wheels
+// 'Car.Start()' is internal & this is another project
+
+Car fiat = new() { Wheels = 4, IsEV = true };
+// fiat.Start();
