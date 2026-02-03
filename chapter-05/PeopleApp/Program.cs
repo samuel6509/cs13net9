@@ -219,12 +219,18 @@ foreach (Passenger passenger in passengers)
         // _                                             => 800M
 
         // c# 9 or later syntax
-        FirstClassPassenger p => p.AirMiles switch
-        {
-            > 35_000 => 1_500M,
-            > 15_000 => 1_750M,
-            _       => 2_000M
-        },                              
+        // SWITCH
+        // FirstClassPassenger p => p.AirMiles switch
+        // {
+        //     > 35_000 => 1_500M,
+        //     > 15_000 => 1_750M,
+        //     _       => 2_000M
+        // },  
+        // NO SWITCH
+        FirstClassPassenger { AirMiles: > 35000 } => 1500M,
+        FirstClassPassenger { AirMiles: > 15000 } => 1750M, 
+        FirstClassPassenger                       => 2000M,  
+
         BusinessClassPassenger                        => 1_000M,
         CoachClassPassenger p when p.CarryOnKG < 10.0 => 500M,
         CoachClassPassenger                           => 650M,
@@ -232,3 +238,21 @@ foreach (Passenger passenger in passengers)
     };
     WriteLine($"Flight costs {flightCost:C} for {passenger}");
 }
+
+ImmutablePerson jeff = new()
+{
+  FirstName = "Jeff",
+  LastName = "Winger"
+};
+// jeff.FirstName = "Geoff";
+
+ImmutableVehicle car = new()
+{
+  Brand = "Mazda MX-5 RF",
+  Color = "Soul Red Crystal Metallic",
+  Wheels = 4
+};
+ImmutableVehicle repaintedCar = car
+  with { Color = "Polymetal Grey Metallic" };
+WriteLine($"Original car color was {car.Color}.");
+WriteLine($"New car color is {repaintedCar.Color}.");
